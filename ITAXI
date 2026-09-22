@@ -1,0 +1,94 @@
+# iTAXI
+
+## Description
+
+Ce projet de fin d'études consiste à développer **iTAXI**, une solution IoT dédiée à la gestion des réservations de taxis.
+
+Son objectif est d'optimiser la mobilité urbaine en réduisant le temps d'attente des clients, tout en proposant une application mobile accessible aux utilisateurs standards ainsi qu'aux personnes malvoyantes grâce à un assistant vocal permettant de commander un taxi et de suivre leur trajet.
+
+Le système repose sur un **boîtier embarqué basé sur l'ESP32**, intégrant un **module GPS NEO-6M**, un **écran LCD 20×4** et deux boutons-poussoirs permettant au chauffeur d'accepter ou de refuser les courses.
+
+L'architecture IoT s'appuie sur une communication bidirectionnelle entre le boîtier embarqué et l'application mobile via **Firebase**. Les données sont synchronisées en temps réel afin d'assurer le suivi des taxis et des réservations.
+
+## Technologies utilisées
+
+- Android Studio
+- Kotlin
+- Arduino IDE
+- ESP32
+- Firebase
+- GitHub
+- Altium Designer
+- Wi-Fi
+- GPS NEO-6M
+- LCD 20×4
+
+##  Fonctionnalités principales
+
+### 👤 Client standard
+
+- 🔐 Création de compte et connexion
+- 🚕 Recherche des taxis disponibles
+- 📍 Affichage de la position des taxis en temps réel
+- 💰 Affichage du prix estimé
+- 📲 Réservation d'un taxi
+- 🗺️ Suivi du trajet en temps réel
+- ⭐ Gestion des taxis favoris
+- 📋 Consultation de l'historique des réservations
+
+### 👁️ Client malvoyant
+
+- 🎙️ Authentification et interaction avec l'application par la voix
+- 🗣️ Recherche et sélection vocale des taxis
+- 🔊 Annonce des taxis disponibles à proximité
+- 📍 Guidage vocal
+- 📏 Indication vocale de la distance en temps réel
+- ⭐ Gestion vocale des favoris
+- 📋 Consultation vocale de l'historique
+
+### 📡 Système IoT du taxi
+
+- 📍 Géolocalisation GPS avec ESP32
+- 🔄 Envoi de la position vers Firebase
+- 📺 Affichage des informations sur l'écran LCD
+- 🔄 Mise à jour automatique du statut du taxi
+- 📡 Communication Wi-Fi avec Firebase
+
+### Chauffeur
+
+- Réception des informations de la course
+- Affichage de la destination sur l'écran LCD
+- Acceptation de la course avec un bouton
+- Refus de la course avec un bouton
+- Gestion automatique de la communication avec Firebase
+- Transmission automatique de la position GPS
+
+##  Captures d'écran
+
+### Application mobile
+
+![Application iTAXI](application%20iTAXI.png)
+
+![Processus de connexion malvoyant](processus%20de%20connexion%20malvoyants.png)
+
+![Réservation](reservation.png)
+
+![Suivi](suivi.png)
+
+![Évaluation](evaluation.png)
+
+###  Système embarqué
+
+![Boîtier iTAXI](image1.png)
+
+### ⚡ Schéma électrique
+
+![Schéma électrique](schéma%20electrique.png)
+
+### 🖥️ Schéma PCB
+
+![Schéma PCB](schéma%20pcb.png)
+
+### 🧩 Modèle 3D
+
+![Modèle 3D](schéma%203D.png)
